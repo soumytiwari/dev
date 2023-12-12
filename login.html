@@ -1,29 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    
     <title>Login Page</title>
 </head>
+
 <body>
     <h2>Welcome Back!</h2>
     <p>Please enter your details to continue</p>
+
+    <!-- #NAVBAR -->
+
     <form action="">
         <div>
-            <input type="email" placeholder="Your Email">
+            <input type="email" placeholder="Your Email" required>
+            <i class='bx bxs-envelope' ></i>
         </div>
+
         <div>
-            <input type="password" placeholder="Your Password">
+            <input type="password" placeholder="Your Password" required>
+            <i class='bx bxs-lock-alt'></i>
+        </div>
+
+        <div class="remember-me">
+            <label for=""><input type="checkbox">Remember-me</label>
+            <a href="#">Forgot Password</a>
+        </div>
+
+        <button type="submit">
+            <a href="homePageNew.html">login</a>
+        </button>
+
+        <div class="register-link">
+            <p>Don't have an account? <a href="signup.html">Register</a></p>
         </div>
     </form>
-    <input type="checkbox">
-    <a href="#">Remember Me</a>
-    <!-- for now.. -->
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-    <a href="#">Forgot Password</a>
-    <br>
-    <button>
-        <a href="homePageNew.html">login</a>
-    </button>
+
 </body>
+
 </html>
