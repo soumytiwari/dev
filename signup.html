@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="signupStyle.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 
     <title>SignupPage</title>
@@ -15,77 +15,59 @@
     <!-- homePageDefault-> Login/Login-> Signup/Login-> HomePageNew -->
     <!-- let's make it hover over default home page -->
     <!-- on choosing login, login page will hover over the default home page -->
-    
-    <h1>Registration Form</h1>
-    <h2>Create your account</h2>
-    <p>Enter following details to create your account</p>
 
     <!-- #NAVBAR -->
 
-    <form action="#">
-        <div>
-            <input type="text" placeholder="First Name" name="fname" required/>
-        </div>
+    <div class="wrapper">
+        <form action="#">
 
-        <div>
-            <input type="text" placeholder="Last Name" name="lname"/>
-        </div>
-
-        <div>
-            <input type="text" placeholder="User Name" name="uname" required/>
-            <i class='bx bxs-user' ></i>
-        <div>
-
-        <div>
-            <input type="email" placeholder="Your Email" name="email" required/>
-            <i class='bx bxs-envelope' ></i>
-        </div>
-
-        <div>
-            <input type="number" placeholder="Your Phone" name="phone"/>
-            <i class='bx bxs-phone' ></i>
-        </div>
-
-        <div>
-            <input type="number" placeholder="Your Age" name="age" required/>
-            <i class='bx bx-child' ></i>
-        </div>
-
-        <div>
-            <label for="gender">Gender: </label>
-            <i class='bx bx-body' ></i> 
-            <label for="female"><input type="radio" name="gender" value="female" name="">  Female  <i class='bx bx-male-sign' ></i></label>            
-            <label for="male"><input type="radio" name="gender" value="male">  Male  <i class='bx bx-male-sign' ></i></label>          
-            <label for="others"><input type="radio" name="gender" value="others">  Others  <i class='bx bxs-flag-alt' ></i></label>
-        </div>
-
-        <div>
-            <input type="password" placeholder="Password" name="password" required/>
-            <i class='bx bxs-lock-alt'></i>
-        </div>
-
-        <div>
-            <input type="password" placeholder="Confirm Password" name="repassword" required/>
-            <i class='bx bxs-lock-alt'></i>
-        </div>
-        
-        <button>
-            <a href="homePageNew.html">signup</a>
-        </button>
+            <h2>Create your account</h2>
+            <p>Enter following details to create your account</p>
     
-        <div class="login-link">
-                <p>Already have an account? <a href="login.html">Login</a></p>
-        </div><br>
-    </form>
-
-    <div>-----------------------------or-------------------------------------</div>
-
-    <p><strong>Signup with --</strong></p>
-    <ol>
-        <li>google #logo</li>
-        <li>facebook #logo</li>
-        <li>apple #logo</li>
-    </ol>
+            <div class="user-name">
+                <input type="text" placeholder="User Name" name="uname" required/>
+                <i class='bx bxs-user' ></i>
+            </div>
+    
+            <div class="email">
+                <input type="email" placeholder="Your Email" name="email" required/>
+                <i class='bx bxs-envelope' ></i>
+            </div>
+    
+            <div class="phone">
+                <input type="number" placeholder="Your Phone" name="phone"/>
+                <i class='bx bxs-phone' ></i>
+            </div>
+    
+            <div class="passB">
+                <input type="password" placeholder="Password" name="password" required/>
+                <i class='bx bxs-lock-alt'></i>
+            </div>
+    
+            <div class="passC">
+                <input type="password" placeholder="Confirm Password" name="repassword" required/>
+                <i class='bx bxs-lock-alt'></i>
+            </div>
+            
+            <button type="submit" class="btn">
+                <a href="homePageNew.html">signup</a>
+            </button>
+        
+            <div class="login-link">
+                    <p>Already have an account? <a href="login.html">Login</a></p>
+            </div><br>
+    
+            <hr class="hr1">
+    
+            <!-- <p><strong></strong></p> -->
+            <h4>Signup with</h4>
+            <ul class="list">
+                <li id="google"><a href="#"><i class='bx bxl-google'></i></a></i></li>
+                <li id="meta"><a href="#"><i class='bx bxl-meta' ></i></a></li>
+                <li id="apple"><a href="#"><i class='bx bxl-apple' ></i></a></li>
+            </ul>
+        </form>
+    </div>
 
 </body>
 </html>

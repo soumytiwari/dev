@@ -18,16 +18,18 @@ body {
 .wrapper {
     /* background: rgba(137, 43, 226, 0.182); */
     background: transparent;
-    width: 420px;
+    width: 500px;
     color: #ffff;
     padding: 50px;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 21.1);
     border: 1.4px solid rgba(255, 255, 255, 0.3);
     backdrop-filter: blur(20px);
+    margin-top: 100px;
+    margin-bottom: 100px;
 }
 .wrapper h2{
-    font-size: 38px;
+    font-size: 30px;
     text-align: center;
     box-shadow: 0 0 10px rgba(0, 0, 0, .3);
     border-radius: 40px;
@@ -38,63 +40,42 @@ body {
     font-style: italic;
     text-align: center;
     margin: 0px 0px 15px 0px;
-    padding-bottom: 49px;
-    padding-top: 10px;
+    padding-bottom: 20px;
+    padding-top: 15px;
 }
-.wrapper .input-block1 , .input-block2{
+.wrapper .user-name, .email, .phone, .passB, .passC {
     position: relative;
     background-color: transparent;
+    /* background-color: purple; */
     width: 100%;
     height: 50px;
 }
-.input-block1 input::placeholder, .input-block2 input::placeholder {
-    color: aliceblue;
-}
-.input-block1 input, .input-block2 input {
-    padding: 10px 10px;
+.wrapper input{
+    border: none;
+    outline: none;
     width: 100%;
     height: 100%;
     background: transparent;
-    border: none;
-    outline: none;
-    /* border: 2px solid rgb(139, 82, 204); */
+    padding: 15px 10px;
     border-radius: 40px;
-    font-size: 16px;
+    border: 2px solid gray;
+    font-size: 14px;
     color: #ffff;
-    padding: 18px 62px 19px 26px;
     box-shadow: 0 0 10px rgba(0, 0, 0, .65);
 }
-.input-block1 {
+.wrapper input::placeholder {
+    color: aliceblue;
+}
+.user-name, .email, .passB, .passC, .phone {
     margin-bottom: 20px;
+
 }
-.input-block2 {
-    margin-top: 20px;
-}
-.input-block1 i, .input-block2 i {
+.wrapper i {
     position: absolute;
     right: 20px;
     top: 50%;
     transform: translateY(-50%);
     font-size: 20px;
-}
-.wrapper .remember-me {
-    display: flex;
-    justify-content: space-between;
-    font-size: 14px;
-    margin-top: 70px;
-    margin-bottom: 30px;
-    margin-right: 20px;
-}
-.wrapper .remember-me a {
-    text-decoration: none;
-    color: #ffff;
-}
-.wrapper .remember-me a:hover {
-    text-decoration: underline;
-}
-.remember-me label input {
-    margin-right: 3px;
-    accent-color: #fff;
 }
 .wrapper .btn a {
     text-decoration: none;
@@ -117,14 +98,44 @@ body {
     background-color: #ffffff48;
     border: 1px solid rgba(255, 255, 255, 0.3);
 }
-.wrapper .register-link {
+.wrapper .login-link {
     margin: 20px 0 12px;
 }
-.wrapper .register-link p a{
+.wrapper .login-link p {
+    padding-bottom: 0px;
+}
+.wrapper .login-link p a{
     font-weight: 700;
     text-decoration: none;
     color: #ffff;
 }
-.wrapper .register-link p a:hover{
+.wrapper .login-link p a:hover{
     text-decoration: underline;
+}
+
+
+h4 {
+    font-size: 17px;
+    text-align: center;
+    margin-top: 38px;
+    margin-bottom: 34px;
+}
+#google {
+    float: left;
+    display: inline-block;
+    margin: 2px 130px;
+    font-size: 23px;
+
+}
+#meta {
+    float: left;
+    display: inline-block;
+    margin: -32px 190px;
+    font-size: 23px;
+}
+#apple {
+    float: right;
+    display: inline-block;
+    margin: -33px 130px;
+    font-size: 23px;
 }
