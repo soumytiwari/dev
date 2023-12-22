@@ -4,6 +4,70 @@
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     box-sizing: border-box;
 }
-a {
-    text-decoration: none;
+.bg {
+    /* background-image: url("bg.jpg"); */
+    background: url('pexels-leonid-danilov-2690766.jpg');
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: rgb(2, 16, 26);
+    background-repeat: no-repeat;
+    background-position: center;
+    backdrop-filter: blur(20px);
+    color: white;
 }
+.left {
+    /* border: 2px solid red; */
+    display: inline-block;
+    position: absolute;
+    top: 23px;
+    left: 20px;
+}
+.mid {
+    /* border: 2px solid green; */
+    /* to center with the help ofmargin sutoo */
+    display: inline-block;
+    /* margin: 23px auto; */
+    top: 23px;
+    right: 25%;
+    position: absolute;
+}
+/* .right {
+    border: 2px solid yellow;
+    display: inline-block;
+    position: absolute;
+    top: 23px;
+    right: 20px;
+} */
+nav ul li {
+    list-style-type: none;
+}
+.navbar {
+    display: inline-block;
+}
+.navbar li {
+    /* this settles the li sss in-line, and we can change the height and width also */
+    display: inline-block;
+    font-size: 25px;
+}
+.navbar li a {
+    text-decoration: none;
+    color: white;
+    padding: 34px 23px;
+}
+.navbar li a:hover, .navbar li a.active {
+    color: rgb(149, 143, 187);
+}
+.left img {
+    width: 71px;
+    /* border: 2px solid pink; */
+    position: relative;
+    margin-left: 33.5px
+}
+.left p {
+    text-align: center;
+}
+
+/* used to convert image color opposite or.. yeah..% */
+/* filter: invert(100%); */
