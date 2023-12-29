@@ -5,81 +5,94 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <link rel="stylesheet" href="styleHomDef.css">
     <link rel="stylesheet" href="signupStyle.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-    <meta name="google-signin-client_id" content="1032703388795-l7pk2jann2i305dq2r9mpu5rp1te65l7.apps.googleusercontent.com">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 
-    <title>SignupPage</title>
+    <title>Whimsical SeaWonder</title>
 </head>
 
-<body>
+<body class="bg">
+    <header class="header">
+        <div class="left">
+            <img src="dolphinLogo.png" alt="logo">
+            <p>Whimsical Oceana</p>
+        </div>
+        <div class="mid">
+            <nav class="navbar">
+                <ul>
+                    <li><a href="#">About</a></li>
+                    <li><a href="homePageDefault.html">Home</a></li>
+                    <li><a href="signup.html">Signup</a></li>
+                    <li><a href="login.html">Login</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                </ul>
+            </nav>
+        </div>
 
-    <script src="signupWith.js"></script>
-    <script src="https://apis.google.com/js/platform.js" async defer></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-
-    <script src="https://accounts.google.com/gsi/client" async></script>
-
-    <!-- homePageDefault-> Login/Login-> Signup/Login-> HomePageNew -->
-    <!-- let's make it hover over default home page -->
-    <!-- on choosing login, login page will hover over the default home page -->
-
-    <!-- #NAVBAR -->
-
+        <!-- <div class="right">
+            am right
+        </div> -->
+    </header>
+    
     <div class="wrapper">
         <form action="#">
 
             <h2>Create your account</h2>
             <p>Enter following details to create your account</p>
-    
+
             <div class="user-name">
-                <input type="text" placeholder="User Name" name="uname" required/>
-                <i class='bx bxs-user' ></i>
+                <input type="text" placeholder="User Name" name="uname" required />
+                <i class='bx bxs-user'></i>
             </div>
-    
+
             <div class="email">
-                <input type="email" placeholder="Your Email" name="email" required/>
-                <i class='bx bxs-envelope' ></i>
+                <input type="email" placeholder="Your Email" name="email" required />
+                <i class='bx bxs-envelope'></i>
             </div>
-    
+
             <div class="phone">
-                <input type="number" placeholder="Your Phone" name="phone"/>
-                <i class='bx bxs-phone' ></i>
+                <input type="number" placeholder="Your Phone" name="phone" />
+                <i class='bx bxs-phone'></i>
             </div>
-    
+
             <div class="passB">
-                <input type="password" placeholder="Password" name="password" class="password" required/>
+                <input type="password" placeholder="Password" name="password" class="password" required />
                 <i class='bx bxs-lock-alt'></i>
             </div>
-    
+
             <div class="passC">
-                <input type="password" placeholder="Confirm Password" name="repassword" class="password" required/>
+                <input type="password" placeholder="Confirm Password" name="repassword" class="password" required />
                 <i class='bx bxs-lock-alt'></i>
             </div>
-            
+
             <button type="submit" class="btn">
                 <a href="homePageNew.html" class="link">signup</a>
             </button>
-        
+
             <div class="login-link">
-                    <p>Already have an account? <a href="login.html" class="link">Login</a></p>
+                <p>Already have an account? <a href="login.html" class="link">Login</a></p>
             </div><br>
-    
+
             <hr class="hr1">
-    
+
             <!-- <p><strong></strong></p> -->
             <h4>Signup with</h4>
             <ul class="list">
                 <li id="google"><a href="#"><i class='bx bxl-google'></i></a></i></li>
-                <li id="meta"><a href="#"><i class='bx bxl-meta' ></i></a></li>
-                <li id="apple"><a href="#"><i class='bx bxl-apple' ></i></a></li>
+                <li id="meta"><a href="#"><i class='bx bxl-meta'></i></a></li>
+                <li id="apple"><a href="#"><i class='bx bxl-apple'></i></a></li>
             </ul>
         </form>
     </div>
 
-    <script src="signupWith.js"></script>
 
+    <!-- #SOME - BODY IMAGE FOR BACKGROUND -->
+
+
+    <!-- if clicked Signup, goto__ signup page -->
+    <!-- if clicked Login, goto__ login page -->
+    <!-- some basic functionalities -->
 </body>
+
 </html>
