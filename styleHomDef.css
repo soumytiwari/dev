@@ -27,6 +27,23 @@
     left: 20px;
 }
 
+.left img {
+    transition: transform 0.3s ease;
+}
+
+.left img:hover {
+    transform: scale(1.1);
+}
+
+.left p {
+    transition: transform 0.3s ease;
+}
+
+.left p:hover {
+    font-style: bold;
+    transform: scale(1.1);
+}
+
 .mid {
     /* border: 2px solid green; */
     /* to center with the help ofmargin sutoo */
@@ -87,19 +104,28 @@ nav ul li {
 
 .container img {
     width: 250px;
+    transition: transform 0.3s ease;
 }
+
+.container img:hover {
+    transform: scale(1.1);
+}
+
 .container .dolphin-1 {
     position: relative;
     top: 390px; left: 564px;
 }
+
 .container .mermaid {
     position: absolute;
     top: 270px; left: 30px;
 }
+
 .container .whale {
     position: absolute;
     top: -130px; right: 0px;
 }
+
 .container .jellyfish {
     position: absolute;
     top: 200px; right: 250px;
@@ -110,6 +136,7 @@ nav ul li {
     -webkit-transform: rotate(-7deg);
     display: inline-block;
 }
+
 .container .dolphin-2 {
     position: absolute;
     top: 670px; left: 210px;
@@ -118,6 +145,7 @@ nav ul li {
     -webkit-transform: rotate(20deg);
     display: inline-block;
 }
+
 .container .fish {
     position: absolute;
     top: 30px; left: 310px;
@@ -126,20 +154,25 @@ nav ul li {
     -webkit-transform: rotate(40deg);
     display: inline-block;
 }
+
 .container .starfish {
     position: absolute;
     top: 810px; right: 170px;
 }
+
 .container .tortoise {
     position: relative;
     bottom: 0px; left: -600px;
 }
+
 .container .octopus {
     position: relative;
     bottom: -546px;
 }
+
 .container .secret-animal {
     position: relative;
     /* display: none; */
     right: 0px; top: -350px;
 }
+
