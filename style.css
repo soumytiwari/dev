@@ -1,15 +1,135 @@
-*{
+* {
     padding: 0;
     margin: 0;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     box-sizing: border-box;
 }
-a {
-    text-decoration: none;
-}
-body {
+
+.bg {
+    background: url('pexels-leonid-danilov-2690766.jpg');
     display: flex;
     justify-content: center;
     align-items: center;
     min-height: 100vh;
+    background-color: rgb(2, 16, 26);
+    background-repeat: no-repeat;
+    background-position: center;
+    backdrop-filter: blur(20px);
+    color: white;
+}
+
+.left {
+    /* border: 2px solid red; */
+    display: inline-block;
+    position: absolute;
+    top: 23px;
+    left: 20px;
+}
+
+.mid {
+    /* border: 2px solid green; */
+    /* to center with the help of margin sutoo */
+    display: inline-block;
+    top: 23px;
+    right: 30%;
+    position: absolute;
+}
+
+nav ul li {
+    list-style-type: none;
+}
+
+.navbar {
+    display: inline-block;
+}
+
+.navbar li {
+    /* this settles the li sss in-line, and we can change the height and width also */
+    display: inline-block;
+    font-size: 25px;
+}
+
+.navbar li a {
+    text-decoration: none;
+    color: white;
+    padding: 34px 23px;
+}
+
+.navbar li a:hover,
+.navbar li a.active {
+    color: rgb(60, 56, 81);
+}
+
+.left img {
+    width: 71px;
+    /* border: 2px solid pink; */
+    position: relative;
+    margin-left: 33.5px
+}
+
+.left p {
+    text-align: center;
+}
+
+/* used to convert image color opposite or.. yeah..% */
+/* filter: invert(100%); */
+
+/* ========================= */
+.container img {
+    width: 250px;
+}
+.container .dolphin-1 {
+    position: relative;
+    top: 390px; left: 564px;
+}
+.container .mermaid {
+    position: absolute;
+    top: 270px; left: 30px;
+}
+.container .whale {
+    position: absolute;
+    top: -130px; right: 0px;
+}
+.container .jellyfish {
+    position: absolute;
+    top: 200px; right: 250px;
+    transform: rotate(-7deg);
+    -ms-transform: rotate(-7deg);	 /*  for IE  */
+
+    /* 	for browsers supporting webkit (such as chrome, firefox, safari etc.). */
+    -webkit-transform: rotate(-7deg);
+    display: inline-block;
+}
+.container .dolphin-2 {
+    position: absolute;
+    top: 670px; left: 210px;
+    transform: rotate(20deg);
+    -ms-transform: rotate(20deg);
+    -webkit-transform: rotate(20deg);
+    display: inline-block;
+}
+.container .fish {
+    position: absolute;
+    top: 30px; left: 310px;
+    transform: rotate(40deg);
+    -ms-transform: rotate(40deg);
+    -webkit-transform: rotate(40deg);
+    display: inline-block;
+}
+.container .starfish {
+    position: absolute;
+    top: 810px; right: 170px;
+}
+.container .tortoise {
+    position: relative;
+    bottom: 0px; left: -600px;
+}
+.container .octopus {
+    position: relative;
+    bottom: -546px;
+}
+.container .secret-animal {
+    position: relative;
+    /* display: none; */
+    right: 0px; top: -350px;
 }
