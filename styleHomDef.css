@@ -12,7 +12,7 @@
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background-color: rgb(2, 16, 26);
+    /* background-color: rgb(2, 16, 26); */
     background-repeat: no-repeat;
     background-position: center;
     backdrop-filter: blur(20px);
@@ -109,6 +109,7 @@ nav ul li {
 
 .container img:hover {
     transform: scale(1.1);
+    transition: transform 0.6s;
 }
 
 .container .dolphin-1 {
